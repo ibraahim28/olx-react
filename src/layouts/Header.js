@@ -8,7 +8,7 @@ import Button_div from "../components/buttons";
 
 const Header = () => {
   return (
-    <header>
+    <header className="flex flex-col ">
       <div className="flex justify-around w-1/3">
         <div className="w-14">
           <div>
@@ -28,7 +28,7 @@ const Header = () => {
           <span className="font-semibold">Property</span>
         </div>
       </div>
-      <div className="flex justify-center items-center w-screen">
+      <div className=" px-4 py-1 flex gap-5 items-center border-b">
         <Dropdown />
         <Input />
         <Button_div />
