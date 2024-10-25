@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiArrowDownSLine } from "react-icons/ri";
 import image from "../assets/img/492999856-240x180.webp";
+import Catagories from "./catagories";
 
 const Hero_section = () => {
   let [imageIndex, setImageIndex] = useState(0);
@@ -23,13 +24,13 @@ const Hero_section = () => {
     },
   ];
   return (
-    <div>
-      <div className=" px-4 flex ">
+    <div className="">
+      <div className="pb-6 pt-2 px-4  flex ">
         <span className="font-bold flex items-center gap-2">
           {" "}
           ALL CATEGORIES <RiArrowDownSLine />{" "}
         </span>
-        <ul className="flex flex-row gap-4 font-thin text-base ">
+        <ul className="flex flex-row gap-4 font-light text-base ">
           <li>Mobile Phones</li>
           <li>Cars</li>
           <li>Motorcycles</li>
@@ -41,7 +42,9 @@ const Hero_section = () => {
       </div>
         <img src={sliderUrl[0].url} />
       {/* <img src={sliderUrl[imageIndex].url} alt={sliderUrl[imageIndex].title} /> */}
+      <Catagories />
     </div>
+    
   );
 };
 
