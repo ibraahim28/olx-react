@@ -75,13 +75,18 @@ const Catagories = () => {
   ];
 
   return (
-    <div>
+    <div className="">
+      <h1 className="mb-2 mt-10 text-2xl font-bold px-4">ALL CATAGORIES</h1>
+      <div className="flex flex-wrap justify-center gap-10 ">
       {catagories.map((v, i) => {
-        return <div key={i}>
+        return <div className="flex items-center flex-col font-bold text-center text-lg gap-3 w-36" key={i}>
+            <div className="">
             <img src={v.image} />
-            <h3>{v.title}</h3>
+            </div>
+            <span>{v.title}</span>
         </div>;
       })}
+      </div>
     </div>
   );
 };

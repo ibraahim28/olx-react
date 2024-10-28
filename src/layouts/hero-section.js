@@ -7,7 +7,6 @@ const Hero_section = () => {
   let [imageIndex, setImageIndex] = useState(0);
   setInterval(() => {
     imageIndex <= 2 ? setImageIndex(imageIndex++) :  setImageIndex(0) ;
-    console.log("working")
   }, 3000);
   const sliderUrl = [
     {

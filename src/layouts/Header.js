@@ -8,7 +8,7 @@ import Button_div from "../components/buttons";
 
 const Header = () => {
   return (
-    <header className="flex flex-col ">
+    <header className="flex flex-col sticky top-0 bg-white">
       <div className="flex justify-around w-1/3">
         <div className="w-14">
           <div>
