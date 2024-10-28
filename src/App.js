@@ -1,5 +1,6 @@
 
 import './App.css';
+import AppLinks from './components/mobile-app';
 import CardLayout from './layouts/Card-Layout';
 import Footer from './layouts/footer';
 import Header from './layouts/Header';
@@ -222,7 +223,7 @@ const jobs = [
 
 function App() {
   return (
-    <div className="App overflow-x-auto">
+    <div className="App ">
       <Header />
       <Hero_section />
       <CardLayout data={mobilePhones} heading = "Mobile Phones" />
@@ -231,6 +232,7 @@ function App() {
       <CardLayout data={properties} heading = "Properties" />
       <CardLayout data={videoAudioTablets} heading = "Video & Audio Tablets" />
       <CardLayout data={jobs} heading = "Jobs" />
+      <AppLinks />
       <Footer />
     </div>
   );

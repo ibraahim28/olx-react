@@ -23,7 +23,7 @@ const Hero_section = () => {
     },
   ];
   return (
-    <div className="">
+    <div className="p-2 mx-auto">
       <div className="pb-6 pt-2 px-4  flex ">
         <span className="font-bold flex items-center gap-2">
           {" "}

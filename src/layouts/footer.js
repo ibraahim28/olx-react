@@ -43,7 +43,8 @@ const Footer = () => {
 
   return (
     
-    <footer className="w-screen bg-zinc-100 py-8 px-4 flex justify-between">
+    <footer className="w-screen bg-[#ebeeef] border-t-[1px] border-gray-400 py-8 px-4 flex justify-between">
+      
       {footerLinks.map((v, i) => (
         <section key={i}>
           <div className="flex flex-col gap-4">

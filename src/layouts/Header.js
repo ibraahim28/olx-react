@@ -8,8 +8,8 @@ import Button_div from "../components/buttons";
 
 const Header = () => {
   return (
-    <header className="flex flex-col sticky top-0 bg-white">
-      <div className="flex justify-around w-1/3">
+    <header className=" sticky top-0 bg-white z-10 pl-11 ">
+      <div className="flex justify-around w-1/3  max-w-screen-lg mb-2">
         <div className="w-14">
           <div>
             <img className="size-20" src={main_icon} />
@@ -28,7 +28,7 @@ const Header = () => {
           <span className="font-semibold">Property</span>
         </div>
       </div>
-      <div className=" px-4 py-1 flex gap-5 items-center border-b">
+      <div className=" px-4 pt-2 pb-4 flex gap-5 items-center border-b">
         <Dropdown />
         <Input />
         <Button_div />
